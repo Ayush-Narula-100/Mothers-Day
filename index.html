@@ -54,8 +54,19 @@
       height: 100%;
       object-fit: cover;
       object-position: center;
-      display: block;
+      transition: transform 0.4s ease;
     }
+    .image-square img:hover {
+  transform: scale(1.08);   /* Nice subtle zoom effect like Memories */
+}
+
+/* Card styling */
+.soft-card, .group {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
     .soft-card {
   display: flex;
   flex-direction: column;
@@ -217,51 +228,51 @@
   <div class="flex flex-col gap-4">
     <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
       <h3 class="text-2xl font-semibold text-slate-900">Our Songs</h3>
-      <span class="text-sm uppercase tracking-[0.24em] text-rose-500">Tap to open</span>
+      <span class="text-sm uppercase tracking-[0.24em] text-rose-500">TAP TO OPEN</span>
     </div>
     
-    <div class="flex gap-4 overflow-x-auto pb-4 scrollbar-thin scrollbar-track-pink-100 scrollbar-thumb-rose-300 flex-nowrap">
+    <div class="flex gap-4 overflow-x-auto pb-6 scrollbar-thin scrollbar-track-pink-100 scrollbar-thumb-rose-300 flex-nowrap">
       
       <!-- Song 1 -->
       <a href="https://www.youtube.com/watch?v=MXSEr_hg7iE" 
-         class="soft-card section-card min-w-[260px] rounded-3xl overflow-hidden bg-white shadow-md cursor-pointer flex flex-col">
+         class="group min-w-[260px] rounded-3xl overflow-hidden bg-white shadow-md cursor-pointer flex flex-col hover:shadow-xl transition-all">
         <div class="image-square">
           <img src="Images/1.a.jpg" alt="My Sunshine" class="w-full h-full object-cover">
         </div>
-        <div class="bg-white p-4 text-center font-medium text-slate-800">
+        <div class="p-4 text-center bg-white">
           ❤️ My Sunshine ❤️
         </div>
       </a>
 
       <!-- Song 2 -->
       <a href="https://www.youtube.com/watch?v=mt9xg0mmt28" 
-         class="soft-card section-card min-w-[260px] rounded-3xl overflow-hidden bg-white shadow-md cursor-pointer flex flex-col">
+         class="group min-w-[260px] rounded-3xl overflow-hidden bg-white shadow-md cursor-pointer flex flex-col hover:shadow-xl transition-all">
         <div class="image-square">
           <img src="Images/s3.jpg" alt="Tum se hi" class="w-full h-full object-cover">
         </div>
-        <div class="bg-white p-4 text-center font-medium text-slate-800">
+        <div class="p-4 text-center bg-white">
           Tum se hi
         </div>
       </a>
 
       <!-- Song 3 -->
       <a href="https://www.youtube.com/watch?v=II2EO3Nw4m0" 
-         class="soft-card section-card min-w-[260px] rounded-3xl overflow-hidden bg-white shadow-md cursor-pointer flex flex-col">
+         class="group min-w-[260px] rounded-3xl overflow-hidden bg-white shadow-md cursor-pointer flex flex-col hover:shadow-xl transition-all">
         <div class="image-square">
           <img src="Images/s2.jpg" alt="Badtameez Dill" class="w-full h-full object-cover">
         </div>
-        <div class="bg-white p-4 text-center font-medium text-slate-800">
+        <div class="p-4 text-center bg-white">
           Badtameez Dill 😉
         </div>
       </a>
 
       <!-- Song 4 -->
       <a href="https://www.youtube.com/watch?v=yDv0WSgXJVg&list=RDGMEM2j3yRsqu_nuzRLnHd2bMVA&start_radio=1&rv=II2EO3Nw4m0" 
-         class="soft-card section-card min-w-[260px] rounded-3xl overflow-hidden bg-white shadow-md cursor-pointer flex flex-col">
+         class="group min-w-[260px] rounded-3xl overflow-hidden bg-white shadow-md cursor-pointer flex flex-col hover:shadow-xl transition-all">
         <div class="image-square">
           <img src="Images/pfp2.jpeg" alt="Senorita" class="w-full h-full object-cover">
         </div>
-        <div class="bg-white p-4 text-center font-medium text-slate-800">
+        <div class="p-4 text-center bg-white">
           Senorita 😘
         </div>
       </a>
@@ -269,7 +280,6 @@
     </div>
   </div>
 </section>
-
   </div>
 
   <!-- Modal -->
