@@ -57,9 +57,16 @@
       display: block;
     }
     .soft-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(219, 39, 119, 0.1);
+}
+
+.soft-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(219, 39, 119, 0.15);
+}
   }
     .image-wide {
       width: 100%;
@@ -217,38 +224,46 @@
       
       <!-- Song 1 -->
       <a href="https://www.youtube.com/watch?v=MXSEr_hg7iE" 
-         class="soft-card section-card min-w-[260px] rounded-[1.75rem] overflow-hidden cursor-pointer flex flex-col">
+         class="soft-card section-card min-w-[260px] rounded-3xl overflow-hidden bg-white shadow-md cursor-pointer flex flex-col">
         <div class="image-square">
           <img src="Images/1.a.jpg" alt="My Sunshine" class="w-full h-full object-cover">
         </div>
-        <div class="p-4 text-center">❤️ My Sunshine ❤️</div>
+        <div class="bg-white p-4 text-center font-medium text-slate-800">
+          ❤️ My Sunshine ❤️
+        </div>
       </a>
 
       <!-- Song 2 -->
       <a href="https://www.youtube.com/watch?v=mt9xg0mmt28" 
-         class="soft-card section-card min-w-[260px] rounded-[1.75rem] overflow-hidden cursor-pointer flex flex-col">
+         class="soft-card section-card min-w-[260px] rounded-3xl overflow-hidden bg-white shadow-md cursor-pointer flex flex-col">
         <div class="image-square">
           <img src="Images/s3.jpg" alt="Tum se hi" class="w-full h-full object-cover">
         </div>
-        <div class="p-4 text-center">Tum se hi</div>
+        <div class="bg-white p-4 text-center font-medium text-slate-800">
+          Tum se hi
+        </div>
       </a>
 
       <!-- Song 3 -->
       <a href="https://www.youtube.com/watch?v=II2EO3Nw4m0" 
-         class="soft-card section-card min-w-[260px] rounded-[1.75rem] overflow-hidden cursor-pointer flex flex-col">
+         class="soft-card section-card min-w-[260px] rounded-3xl overflow-hidden bg-white shadow-md cursor-pointer flex flex-col">
         <div class="image-square">
           <img src="Images/s2.jpg" alt="Badtameez Dill" class="w-full h-full object-cover">
         </div>
-        <div class="p-4 text-center">Badtameez Dill 😉</div>
+        <div class="bg-white p-4 text-center font-medium text-slate-800">
+          Badtameez Dill 😉
+        </div>
       </a>
 
       <!-- Song 4 -->
       <a href="https://www.youtube.com/watch?v=yDv0WSgXJVg&list=RDGMEM2j3yRsqu_nuzRLnHd2bMVA&start_radio=1&rv=II2EO3Nw4m0" 
-         class="soft-card section-card min-w-[260px] rounded-[1.75rem] overflow-hidden cursor-pointer flex flex-col">
+         class="soft-card section-card min-w-[260px] rounded-3xl overflow-hidden bg-white shadow-md cursor-pointer flex flex-col">
         <div class="image-square">
           <img src="Images/pfp2.jpeg" alt="Senorita" class="w-full h-full object-cover">
         </div>
-        <div class="p-4 text-center">Senorita 😘</div>
+        <div class="bg-white p-4 text-center font-medium text-slate-800">
+          Senorita 😘
+        </div>
       </a>
 
     </div>
