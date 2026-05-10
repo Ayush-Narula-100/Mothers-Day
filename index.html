@@ -40,24 +40,20 @@
     /* Image aspect ratio styling */
     .image-square {
       width: 100%;
-      aspect-ratio: 1 / 1;
-      overflow: hidden;
-      border-radius: 0.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f0f0f0;
-      flex-shrink: 0;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #f3f4f6;
+  flex-shrink: 0;
     }
     .image-square img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      transition: transform 0.4s ease;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease;
     }
     .image-square img:hover {
-  transform: scale(1.08);   /* Nice subtle zoom effect like Memories */
+  transform: scale(1.05);   /* Nice subtle zoom effect like Memories */
 }
 
 /* Card styling */
@@ -235,44 +231,44 @@
       
       <!-- Song 1 -->
       <a href="https://www.youtube.com/watch?v=MXSEr_hg7iE" 
-         class="group min-w-[260px] rounded-3xl overflow-hidden bg-white shadow-md cursor-pointer flex flex-col hover:shadow-xl transition-all">
+         class="min-w-[260px] bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all flex flex-col">
         <div class="image-square">
           <img src="Images/1.a.jpg" alt="My Sunshine" class="w-full h-full object-cover">
         </div>
-        <div class="p-4 text-center bg-white">
+        <div class="p-5 text-center font-medium text-slate-800 min-h-[78px] flex items-center justify-center">
           ❤️ My Sunshine ❤️
         </div>
       </a>
 
       <!-- Song 2 -->
       <a href="https://www.youtube.com/watch?v=mt9xg0mmt28" 
-         class="group min-w-[260px] rounded-3xl overflow-hidden bg-white shadow-md cursor-pointer flex flex-col hover:shadow-xl transition-all">
+         class="min-w-[260px] bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all flex flex-col">
         <div class="image-square">
           <img src="Images/s3.jpg" alt="Tum se hi" class="w-full h-full object-cover">
         </div>
-        <div class="p-4 text-center bg-white">
+        <div class="p-5 text-center font-medium text-slate-800 min-h-[78px] flex items-center justify-center">
           Tum se hi
         </div>
       </a>
 
       <!-- Song 3 -->
       <a href="https://www.youtube.com/watch?v=II2EO3Nw4m0" 
-         class="group min-w-[260px] rounded-3xl overflow-hidden bg-white shadow-md cursor-pointer flex flex-col hover:shadow-xl transition-all">
+         class="min-w-[260px] bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all flex flex-col">
         <div class="image-square">
           <img src="Images/s2.jpg" alt="Badtameez Dill" class="w-full h-full object-cover">
         </div>
-        <div class="p-4 text-center bg-white">
+        <div class="p-5 text-center font-medium text-slate-800 min-h-[78px] flex items-center justify-center">
           Badtameez Dill 😉
         </div>
       </a>
 
       <!-- Song 4 -->
       <a href="https://www.youtube.com/watch?v=yDv0WSgXJVg&list=RDGMEM2j3yRsqu_nuzRLnHd2bMVA&start_radio=1&rv=II2EO3Nw4m0" 
-         class="group min-w-[260px] rounded-3xl overflow-hidden bg-white shadow-md cursor-pointer flex flex-col hover:shadow-xl transition-all">
+         class="min-w-[260px] bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all flex flex-col">
         <div class="image-square">
           <img src="Images/pfp2.jpeg" alt="Senorita" class="w-full h-full object-cover">
         </div>
-        <div class="p-4 text-center bg-white">
+        <div class="p-5 text-center font-medium text-slate-800 min-h-[78px] flex items-center justify-center">
           Senorita 😘
         </div>
       </a>
